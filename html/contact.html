@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Выходной маршрут</title>
+</head>
+<body bgcolor="#f5f5dc">
+
+    <header>
+        
+        <nav>
+            <b>МЕНЮ ЛАБОРАТОРНОЙ РАБОТЫ:</b> 
+            [<a href="index.html">Главная страница</a>] 
+            [<a href="catalog.html">Наши Маршруты</a>] 
+            [<a href="contact.html">Форма Заказа и Контакты (Вы здесь)</a>]
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Контакты и бронирование туров</h1>
+        
+        <section>
+            <h2>Наш офис</h2>
+            <p><b>Адрес:</b> ул. Студенческая, д. 404, офис 12 (возле главного корпуса)</p>
+            <p><b>Телефон:</b> +7 (999) 999-99-99 (Звонить строго с 10:00 до 18:00)</p>
+            <p><b>Электронная почта:</b> info@четотам.com </p>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Форма онлайн-заявки на однодневный тур</h2>
+            <p>Заполните все поля ниже. Браузер автоматически проверит правильность ввода данных!</p>
+
+            <form action="#" method="post">
+                
+                <p>
+                    <label for="visitor-name">Ваше имя (обязательно):</label><br>
+                    <input type="text" id="visitor-name" name="username" required placeholder="Кто-то и что-то еще">
+                </p>
+
+                <p>
+                    <label for="visitor-email">Ваш E-mail для связи:</label><br>
+                    <input type="email" id="visitor-email" name="email" required placeholder="еще там доп инфо">
+                </p>
+
+                <p>
+                    <label for="route-select">Выберите желаемый маршрут:</label><br>
+                    <select id="route-select" name="route" required>
+                        <option value="">-- Нажмите для выбора --</option>
+                        <option value="canyon">Таинственный каньон (26.09)</option>
+                        <option value="cedars">Тропа Древних Кедров (27.09)</option>
+                        <option value="fortress">Крепостной Вал (03.10)</option>
+                        <option value="peak">Пик Ветров (04.10)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="participants-count">Количество участников (от 1 до 10 человек):</label><br>
+                    <input type="number" id="participants-count" name="participants" min="1" max="10" value="1" required>
+                </p>
+
+                <p>
+                    <label for="travel-date">Выберите дату выезда:</label><br>
+                    <input type="date" id="travel-date" name="travel_date" required>
+                </p>
+
+                <p>
+                    <label for="user-message">Дополнительные пожелания к поездке:</label><br>
+                    <textarea id="user-message" name="message" rows="5" cols="45" placeholder="Например: нужно бла бла бла"></textarea>
+                </p>
+
+                <br>
+                <p>
+                    <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    <button type="reset">Очистить форму</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p align="center">&copy; 2026 Сервис «Выходной маршрут». Студенческая лабораторная работа №5991.</p>
+    </footer>
+
+</body>
+</html>
