@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Выходной маршрут</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <b>ФОРМА РЕГИСТРАЦИИ:</b> 
+            <button class="nav-btn"><a href="index.html">Главная страница</a></button>
+            <button class="nav-btn"><a href="catalog.html">Наши Маршруты</a></button>
+            <button class="nav-btn"><a href="contact.html">Форма Заказа и Контакты</a></button>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Контакты и бронирование туров</h1>
+        
+        <br>
+
+        <section>
+            <h2>Форма онлайн-заявки на однодневный тур</h2>
+
+            <form action="#" method="post">
+                
+                <p>
+                    <label for="visitor-name">Ваше имя:</label><br>
+                    <input type="text" id="visitor-name" name="username" required placeholder="" class="input">
+                </p>
+
+                <p>
+                    <label for="visitor-email">Ваш E-mail для связи:</label><br>
+                    <input type="email" id="visitor-email" name="email" required placeholder="" class="input">
+                </p>
+
+                <p>
+                    <label for="route-select">Выберите желаемый маршрут:</label><br>
+                    <select id="route-select" name="route" required class="input">
+                        <option value=""></option>
+                        <option value="canyon">Таинственный каньон</option>
+                        <option value="cedars">Тропа Древних Кедров</option>
+                        <option value="fortress">Крепостной Вал</option>
+                        <option value="peak">Пик Ветров</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="participants-count">Количество участников (от 1 до 10 человек):</label><br>
+                    <input type="number" id="participants-count" name="participants" min="1" max="10" value="1" required class="input" width="95%">
+                </p>
+
+                <p>
+                    <label for="travel-date">Выберите дату выезда:</label><br>
+                    <input type="date" id="travel-date" name="travel_date" required class="inout" class="input">
+                </p>
+
+                <p>
+                    <label for="user-message">Дополнительные пожелания к поездке:</label><br>
+                    <textarea id="user-message" name="message" rows="5" cols="45" placeholder="Например: нужно бла бла бла" class="input"></textarea>
+                </p>
+
+                <br>
+                <p>
+                    <button type="submit" class="nav-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    <button type="reset" class="nav-btn">Очистить форму</button>
+                </p>
+
+            </form>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <a ><b>Адрес:</b> ул. Студенческая, д. 404, офис 12 (возле главного корпуса) </a>
+        <a ><b>Телефон: </b>+7 (999) 999-99-99 (Звонить строго с 10:00 до 18:00) </a>
+        <a ><b>Электронная почта:</b> info@четотам.com </a>
+    </footer>
+        
+</body>
+</html>
